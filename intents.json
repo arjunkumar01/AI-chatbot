@@ -1,0 +1,490 @@
+{
+    "intents": [
+        {
+            "tag": "greeting",
+            "patterns": ["Hi", "Hello", "Hey", "Good morning", "Good afternoon", "Is anyone there?", "Hi, can you help me?"],
+            "responses": ["Hello!", "Hi, how can I assist you today?", "Good to see you! How can I help?"],
+            "context": [""]
+        },
+        {
+            "tag": "goodbye",
+            "patterns": ["Goodbye", "See you later", "Bye", "Thanks, bye", "Talk to you soon"],
+            "responses": ["Goodbye! Have a great day!", "See you soon!", "Thanks for visiting, take care!"],
+            "context": [""]
+        },
+        {
+            "tag": "thank_you",
+            "patterns": ["Thank you", "Thanks", "Much appreciated", "You're a lifesaver", "Thanks a lot"],
+            "responses": ["You're welcome!", "Happy to help!", "Anytime!"],
+            "context": [""]
+        },
+        {
+            "tag": "order_status",
+            "patterns": ["Where is my order?", "Track my order", "What's the status of my order?", "Order tracking"],
+            "responses": ["You can track your order by clicking here: [tracking_link]", "Your order is on its way!"],
+            "context": [""]
+        },
+        {
+            "tag": "order_delay",
+            "patterns": ["Why is my order delayed?", "My delivery is late", "Where's my package?", "Why hasn't my order arrived?"],
+            "responses": ["I’m sorry for the delay. Please check the status [tracking_link]", "We apologize for the delay, your order should arrive soon!"],
+            "context": [""]
+        },
+        {
+            "tag": "return_policy",
+            "patterns": ["What is your return policy?", "Can I return an item?", "How do returns work?", "Return item"],
+            "responses": ["You can view our return policy here: [return_policy_link]", "You can return any item within 30 days of purchase."],
+            "context": [""]
+        },
+        {
+            "tag": "return_process",
+            "patterns": ["How do I return a product?", "I want to return something", "Can you help with a return?"],
+            "responses": ["To initiate a return, follow these steps: [return_steps_link]", "Sure, visit the returns page here: [returns_page_link]"],
+            "context": [""]
+        },
+        {
+            "tag": "refund_status",
+            "patterns": ["Where is my refund?", "When will I get my refund?", "Refund status"],
+            "responses": ["You can check your refund status here: [refund_link]", "Refunds typically take 5-7 business days."],
+            "context": [""]
+        },
+        {
+            "tag": "exchange_item",
+            "patterns": ["Can I exchange my item?", "How do exchanges work?", "I want to exchange this product"],
+            "responses": ["You can exchange an item following these steps: [exchange_process_link]", "Exchanges are available within 30 days of purchase."],
+            "context": [""]
+        },
+        {
+            "tag": "payment_methods",
+            "patterns": ["What payment methods do you accept?", "Do you take credit cards?", "Can I use PayPal?", "Payment options"],
+            "responses": ["We accept credit cards, debit cards, PayPal, and other forms of payment.", "You can view all accepted payment methods here: [payment_options_link]"],
+            "context": [""]
+        },
+        {
+            "tag": "cancel_order",
+            "patterns": ["How do I cancel my order?", "Cancel order", "Can I cancel my purchase?", "I want to cancel my order"],
+            "responses": ["You can cancel your order by visiting this link: [cancel_link]", "If the order hasn’t shipped, you can cancel it here: [cancel_link]"],
+            "context": [""]
+        },
+        {
+            "tag": "product_not_received",
+            "patterns": ["I haven't received my product", "My package didn't arrive", "I didn't get my order"],
+            "responses": ["Please check the status of your order here: [tracking_link]", "We apologize for the inconvenience. Here is the tracking info: [tracking_link]"],
+            "context": [""]
+        },
+        {
+            "tag": "order_issues",
+            "patterns": ["There's a problem with my order", "My order arrived damaged", "I received the wrong product"],
+            "responses": ["We’re sorry about the issue. Please report it here: [issue_report_link]", "You can start a return or exchange here: [returns_page_link]"],
+            "context": [""]
+        },
+        {
+            "tag": "product_info",
+            "patterns": ["Tell me about this product", "Can you give me more details on this item?", "What is this product made of?", "How does this product work?"],
+            "responses": ["You can find all the details here: [product_info_link]", "Here is more information on this product: [product_info_link]"],
+            "context": [""]
+        },
+        {
+            "tag": "warranty_info",
+            "patterns": ["Is there a warranty?", "How long is the warranty?", "Can you tell me about the warranty for this product?"],
+            "responses": ["The product comes with a warranty of 1 year. More details here: [warranty_link]", "You can view warranty information here: [warranty_info_link]"],
+            "context": [""]
+        },
+        {
+            "tag": "price_match",
+            "patterns": ["Do you offer price matching?", "Will you match this price?", "Price match policy"],
+            "responses": ["We offer price matching on select products. Learn more here: [price_match_link]", "Here’s our price match policy: [price_match_policy_link]"],
+            "context": [""]
+        },
+        {
+            "tag": "shipping_info",
+            "patterns": ["How long does shipping take?", "When will my order ship?", "Shipping options", "Tell me about your shipping rates"],
+            "responses": ["Shipping typically takes 3-5 business days. More info here: [shipping_info_link]", "You can view shipping options here: [shipping_options_link]"],
+            "context": [""]
+        },
+        {
+            "tag": "cancel_subscription",
+            "patterns": ["How do I cancel my subscription?", "Cancel my subscription", "I want to end my subscription"],
+            "responses": ["You can cancel your subscription by visiting this link: [subscription_cancel_link]", "To cancel your subscription, follow the steps here: [subscription_help_link]"],
+            "context": [""]
+        },
+        {
+            "tag": "product_availability",
+            "patterns": ["Is this product in stock?", "When will this item be available?", "Do you have this in stock?"],
+            "responses": ["You can check product availability here: [product_availability_link]", "The product is currently in stock/out of stock."],
+            "context": [""]
+        },
+        {
+            "tag": "account_help",
+            "patterns": ["I need help with my account", "How do I reset my password?", "Account issues", "I can't log into my account"],
+            "responses": ["You can reset your password here: [reset_password_link]", "Please visit this link to resolve account issues: [account_help_link]"],
+            "context": [""]
+        },
+        {
+            "tag": "feedback",
+            "patterns": ["I want to give feedback", "How do I leave a review?", "Feedback on product/service"],
+            "responses": ["We appreciate your feedback! You can leave a review here: [feedback_link]", "Feel free to share your thoughts here: [review_page_link]"],
+            "context": [""]
+        },
+        {
+            "tag": "offers_and_discounts",
+            "patterns": ["Do you have any offers?", "Current discounts", "Any sales going on?", "Coupon codes"],
+            "responses": ["Check out our latest offers here: [offers_page_link]", "You can find current discounts here: [discounts_link]"],
+            "context": [""]
+        },
+        {
+            "tag": "delivery_options",
+            "patterns": ["What are my delivery options?", "Can you offer express shipping?", "How fast can you deliver?"],
+            "responses": ["You can find available delivery options here: [delivery_options_link]", "We offer standard and express shipping options."],
+            "context": [""]
+        },
+        {
+            "tag": "damaged_item",
+            "patterns": ["My product arrived damaged", "The item I received is broken", "I got a faulty product"],
+            "responses": ["We’re sorry for the inconvenience. You can request a return here: [return_request_link]", "Please provide more details here: [issue_report_link]"],
+            "context": [""]
+        },
+        {
+            "tag": "lost_package",
+            "patterns": ["My package is lost", "I can't find my package", "The courier can't locate my package"],
+            "responses": ["We’re sorry for the trouble. Please contact support here: [support_link]", "You can check your tracking info here: [tracking_link]"],
+            "context": [""]
+        },
+        {
+            "tag": "delivery_time",
+            "patterns": ["How long does delivery take?", "When will my order arrive?", "Estimated delivery time"],
+            "responses": ["Delivery typically takes 3-5 days. Track your order here: [tracking_link]", "You can view your estimated delivery time here: [delivery_time_link]"],
+            "context": [""]
+        },
+        {
+            "tag": "bulk_order",
+            "patterns": ["Can I place a bulk order?", "Do you offer bulk pricing?", "I need to order multiple items"],
+            "responses": ["For bulk orders, please visit this link: [bulk_order_link]", "You can view our bulk pricing options here: [bulk_pricing_link]"],
+            "context": [""]
+        },
+        {
+            "tag": "gift_wrapping",
+            "patterns": ["Do you offer gift wrapping?", "Can I get this product gift wrapped?", "Gift wrap option"],
+            "responses": ["We offer gift wrapping at checkout. More details here: [gift_wrapping_link]", "You can select gift wrapping at the time of purchase."],
+            "context": [""]
+        },
+        {
+            "tag": "order_summary",
+            "patterns": ["Can I see my order summary?", "What's in my order?", "Order details"],
+            "responses": ["You can view your order summary here: [order_summary_link]", "Your order details are available here: [order_details_link]"],
+            "context": [""]
+        },
+        {
+            "tag": "order_receipt",
+            "patterns": ["Can I get a receipt for my order?", "I need a copy of my receipt", "Order invoice"],
+            "responses": ["You can download your receipt here: [receipt_link]", "Your order invoice is available here: [invoice_link]"],
+            "context": [""]
+        },
+        {
+            "tag": "delivery_tracking",
+            "patterns": ["Can I track my delivery?", "How do I track my shipment?", "Where is my delivery?"],
+            "responses": ["You can track your delivery here: [tracking_link]", "Track your shipment with this link: [shipment_tracking_link]"],
+            "context": [""]
+        },
+        {
+            "tag": "multiple_orders",
+            "patterns": ["I placed multiple orders", "Can I combine my orders?", "I want to merge my orders"],
+            "responses": ["Unfortunately, we can’t merge orders. You can track them individually here: [order_tracking_link]", "You’ll receive separate tracking links for each order."],
+            "context": [""]
+        },
+        {
+            "tag": "subscription_details",
+            "patterns": ["What are the details of my subscription?", "Can you tell me about my subscription?", "Subscription status"],
+            "responses": ["You can view your subscription details here: [subscription_details_link]", "More information about your subscription is available here: [subscription_info_link]"],
+            "context": [""]
+        },
+        {
+            "tag": "subscription_renewal",
+            "patterns": ["How do I renew my subscription?", "Can I renew my subscription?", "Subscription renewal"],
+            "responses": ["You can renew your subscription here: [renew_subscription_link]", "Your subscription can be renewed by visiting: [subscription_help_link]"],
+            "context": [""]
+        },
+        {
+            "tag": "product_customization",
+            "patterns": ["Can I customize this product?", "How do I personalize this item?", "Product personalization"],
+            "responses": ["You can add customizations here: [customization_link]", "Personalization options are available at checkout."],
+            "context": [""]
+        },
+        {
+            "tag": "tax_information",
+            "patterns": ["What about taxes?", "Do you charge tax?", "Tax information"],
+            "responses": ["You can view tax details here: [tax_info_link]", "Taxes are calculated at checkout."],
+            "context": [""]
+        },
+        {
+            "tag": "customer_support",
+            "patterns": ["How do I contact customer support?", "I need help from support", "Contact support"],
+            "responses": ["You can contact support here: [support_link]", "Our customer support team is available here: [customer_support_link]"],
+            "context": [""]
+        },
+        {
+            "tag": "product_complaints",
+            "patterns": ["I want to file a complaint", "How do I file a product complaint?", "Complaint about product"],
+            "responses": ["You can file a complaint here: [complaint_link]", "We’re sorry to hear that. Submit your complaint here: [complaint_form_link]"],
+            "context": [""]
+        },
+        {
+            "tag": "technical_support",
+            "patterns": ["I need technical support", "Can you help with technical issues?", "Tech support needed"],
+            "responses": ["You can reach technical support here: [tech_support_link]", "Our tech support team can assist you here: [technical_support_link]"],
+            "context": [""]
+        },
+        {
+            "tag": "credit_card_issues",
+            "patterns": ["I'm having issues with my credit card", "My credit card payment failed", "Credit card problem"],
+            "responses": ["Please try again or contact your bank for assistance. More help here: [credit_card_help_link]", "You can resolve credit card issues here: [payment_help_link]"],
+            "context": [""]
+        },
+        {
+            "tag": "order_modification",
+            "patterns": ["Can I modify my order?", "I want to change my order", "How do I update my order?"],
+            "responses": ["Unfortunately, you can't modify an order after it’s placed. However, you can cancel it here: [cancel_order_link]", "Please visit this link to update your order: [order_modification_link]"],
+            "context": [""]
+        },
+        {
+            "tag": "product_review",
+            "patterns": ["How do I leave a product review?", "Can I review my purchase?", "Submit a product review"],
+            "responses": ["You can leave a review by visiting the product page and clicking on the 'Write a Review' button."],
+            "context": [""]
+        },
+        {
+            "tag": "gift_card_balance",
+            "patterns": ["Check my gift card balance", "How much is left on my gift card?", "Gift card balance"],
+            "responses": ["You can check your gift card balance here: [gift_card_balance_link]"],
+            "context": [""]
+        },
+        {
+            "tag": "change_delivery_address",
+            "patterns": ["How do I change my delivery address?", "I need to update my shipping address", "Change delivery location"],
+            "responses": ["You can update your delivery address here: [change_address_link], as long as your order hasn't shipped."],
+            "context": [""]
+        },
+        {
+            "tag": "order_history",
+            "patterns": ["Can I see my past orders?", "Show me my order history", "Order history details"],
+            "responses": ["You can view your order history here: [order_history_link]"],
+            "context": [""]
+        },
+        {
+            "tag": "out_of_stock_alert",
+            "patterns": ["Notify me when this item is back in stock", "How do I get stock alerts?", "Out of stock notification"],
+            "responses": ["You can sign up for stock alerts here: [stock_alert_link]"],
+            "context": [""]
+        },
+        {
+            "tag": "invoice_request",
+            "patterns": ["How do I request an invoice?", "Can I get an invoice for my order?", "Invoice for my purchase"],
+            "responses": ["You can request an invoice here: [invoice_request_link]"],
+            "context": [""]
+        },
+        {
+            "tag": "apply_discount_code",
+            "patterns": ["How do I apply a discount code?", "Can I use a promo code?", "Discount code application"],
+            "responses": ["You can apply a discount code at checkout by entering it in the 'Promo Code' field."],
+            "context": [""]
+        },
+        {
+            "tag": "multiple_shipments",
+            "patterns": ["Why did my order arrive in multiple shipments?", "Order split into different deliveries", "Multiple shipments explanation"],
+            "responses": ["Sometimes, items are shipped separately due to different availability or shipping locations. You can track all shipments here: [tracking_link]"],
+            "context": [""]
+        },
+        {
+            "tag": "change_payment_method",
+            "patterns": ["How do I change my payment method?", "I want to use a different payment option", "Update payment method"],
+            "responses": ["You can change your payment method before the order is processed by visiting this link: [payment_update_link]"],
+            "context": [""]
+        },
+        {
+            "tag": "refund_processing_time",
+            "patterns": ["How long does it take to process a refund?", "Refund processing time", "When will I get my refund?"],
+            "responses": ["Refunds typically take 5-7 business days to process. You can check the status of your refund here: [refund_status_link]"],
+            "context": [""]
+        },
+        {
+            "tag": "subscription_cancellation_fee",
+            "patterns": ["Is there a fee for canceling my subscription?", "Subscription cancellation charge", "Will I be charged for canceling my subscription?"],
+            "responses": ["There are no cancellation fees for subscriptions, but you may lose access to benefits immediately upon cancellation."],
+            "context": [""]
+        },
+        {
+            "tag": "guest_checkout",
+            "patterns": ["Can I checkout as a guest?", "Do I need an account to place an order?", "Guest checkout option"],
+            "responses": ["Yes, you can checkout as a guest. However, creating an account allows you to track orders more easily."],
+            "context": [""]
+        },
+        {
+            "tag": "cancel_return_request",
+            "patterns": ["Can I cancel my return request?", "I want to stop my return", "Cancel return"],
+            "responses": ["You can cancel your return request by visiting this link: [cancel_return_link]"],
+            "context": [""]
+        },
+        {
+            "tag": "installment_payment_options",
+            "patterns": ["Do you offer installment payments?", "Can I pay in installments?", "Installment payment plans"],
+            "responses": ["Yes, we offer installment payment plans on select items. You can view more information here: [installment_options_link]"],
+            "context": [""]
+        },
+        {
+            "tag": "membership_benefits",
+            "patterns": ["What are the benefits of membership?", "Why should I become a member?", "Membership perks"],
+            "responses": ["As a member, you get exclusive discounts, faster shipping, and access to early sales. Learn more here: [membership_benefits_link]"],
+            "context": [""]
+        },
+        {
+            "tag": "international_shipping",
+            "patterns": ["Do you ship internationally?", "Can I order products from outside my country?", "International shipping options"],
+            "responses": ["Yes, we offer international shipping. Please check our shipping page for countries and rates: [international_shipping_link]"],
+            "context": [""]
+        },
+        {
+            "tag": "modify_subscription",
+            "patterns": ["How do I modify my subscription?", "I want to change my subscription plan", "Change subscription"],
+            "responses": ["You can modify your subscription plan by visiting this link: [modify_subscription_link]"],
+            "context": [""]
+        },
+        {
+            "tag": "track_referral_bonus",
+            "patterns": ["How do I track my referral bonus?", "Can I see how much I earned from referrals?", "Referral bonus tracking"],
+            "responses": ["You can track your referral bonuses here: [referral_bonus_link]"],
+            "context": [""]
+        },
+        {
+            "tag": "loyalty_program",
+            "patterns": ["Do you have a loyalty program?", "How do I join the loyalty program?", "Loyalty rewards information"],
+            "responses": ["Yes, you can join our loyalty program here: [loyalty_program_link] to earn points and get rewards."],
+            "context": [""]
+        },
+        {
+            "tag": "forgot_email",
+            "patterns": ["I forgot the email I used", "Can't remember my account email", "How do I recover my email?"],
+            "responses": ["You can recover your account email by contacting customer support here: [email_recovery_link]"],
+            "context": [""]
+        },
+        {
+            "tag": "account_creation_help",
+            "patterns": ["How do I create an account?", "Help with account creation", "How do I sign up?"],
+            "responses": ["You can create an account by visiting this link: [account_creation_link] and following the steps provided."],
+            "context": [""]
+        },
+        {
+            "tag": "password_reset",
+            "patterns": ["I forgot my password", "How do I reset my password?", "Password reset help"],
+            "responses": ["You can reset your password by visiting this link: [password_reset_link]."],
+            "context": [""]
+        },
+        {
+            "tag": "account_deactivation",
+            "patterns": ["How do I deactivate my account?", "I want to delete my account", "Close my account"],
+            "responses": ["You can deactivate or close your account by visiting this link: [account_deactivation_link]."],
+            "context": [""]
+        },
+        {
+            "tag": "product_recommendations",
+            "patterns": ["Can you recommend a product?", "What should I buy?", "Product suggestions"],
+            "responses": ["We recommend checking out our top-selling products here: [recommendations_link]."],
+            "context": [""]
+        },
+        {
+            "tag": "price_drop_alerts",
+            "patterns": ["Notify me of price drops", "How do I get alerts for price drops?", "Price drop notifications"],
+            "responses": ["You can sign up for price drop alerts here: [price_drop_alerts_link]."],
+            "context": [""]
+        },
+        {
+            "tag": "dispute_resolution",
+            "patterns": ["How do I resolve a dispute?", "I have a dispute", "Dispute resolution help"],
+            "responses": ["You can resolve disputes by contacting us here: [dispute_resolution_link]."],
+            "context": [""]
+        },
+        {
+            "tag": "order_instructions",
+            "patterns": ["Can I add special instructions to my order?", "Add instructions to my delivery", "Special delivery instructions"],
+            "responses": ["You can add special instructions at checkout or by contacting us here: [order_instructions_link]."],
+            "context": [""]
+        },
+        {
+            "tag": "backorder_policy",
+            "patterns": ["What is your backorder policy?", "How do backorders work?", "Can I place a backorder?"],
+            "responses": ["You can read more about our backorder policy here: [backorder_policy_link]."],
+            "context": [""]
+        },
+        {
+            "tag": "green_shipping_options",
+            "patterns": ["Do you offer green shipping?", "How can I reduce my carbon footprint with shipping?", "Sustainable shipping options"],
+            "responses": ["Yes, we offer eco-friendly shipping options. Learn more here: [green_shipping_link]."],
+            "context": [""]
+        },
+        {
+            "tag": "preorder_item",
+            "patterns": ["How do I preorder an item?", "Can I place a preorder?", "Preorder options"],
+            "responses": ["You can place a preorder for upcoming products here: [preorder_link]."],
+            "context": [""]
+        },
+        {
+            "tag": "tracking_number_not_found",
+            "patterns": ["Why is my tracking number not working?", "Tracking number not found", "Unable to track my order"],
+            "responses": ["If your tracking number isn’t working, please try again later or contact support here: [tracking_issue_link]."],
+            "context": [""]
+        },
+        {
+            "tag": "high_demand_product",
+            "patterns": ["Why is this product out of stock?", "When will this popular item be available?", "High demand product availability"],
+            "responses": ["Popular items may go out of stock quickly. You can sign up for stock notifications here: [stock_alert_link]."],
+            "context": [""]
+        },
+        {
+            "tag": "cancel_preorder",
+            "patterns": ["How do I cancel my preorder?", "Cancel preorder", "Stop my preorder"],
+            "responses": ["You can cancel your preorder by visiting this link: [cancel_preorder_link]."],
+            "context": [""]
+        },
+        {
+            "tag": "first_order_discount",
+            "patterns": ["Is there a discount for first-time customers?", "First order discount", "New customer offer"],
+            "responses": ["Yes, new customers can enjoy a discount! Learn more here: [first_order_discount_link]."],
+            "context": [""]
+        },
+        {
+            "tag": "shipping_to_pobox",
+            "patterns": ["Do you ship to PO boxes?", "Can I get my order delivered to a PO box?", "Shipping to PO box"],
+            "responses": ["We do offer shipping to PO boxes. Check out the details here: [pobox_shipping_link]."],
+            "context": [""]
+        },
+        {
+            "tag": "order_gift_card",
+            "patterns": ["How do I buy a gift card?", "Purchase a gift card", "Gift card ordering"],
+            "responses": ["You can purchase a gift card by visiting this link: [order_gift_card_link]."],
+            "context": [""]
+        },
+        {
+            "tag": "multiple_return_labels",
+            "patterns": ["Why do I have multiple return labels?", "Return label confusion", "Do I need to use all return labels?"],
+            "responses": ["If you received multiple return labels, please follow the instructions for each package separately. Contact support here: [return_support_link]."],
+            "context": [""]
+        },
+        {
+            "tag": "bundle_offers",
+            "patterns": ["Do you offer bundle deals?", "Product bundle discounts", "Bundle offer details"],
+            "responses": ["We offer bundle discounts on select products. Check them out here: [bundle_offers_link]."],
+            "context": [""]
+        },
+        {
+            "tag": "order_expiry",
+            "patterns": ["Does my order expire?", "How long does my order stay valid?", "Order expiration policy"],
+            "responses": ["Orders generally stay valid for a limited time if not paid. More details here: [order_expiry_link]."],
+            "context": [""]
+        },
+        {
+            "tag": "order_confirmation_email",
+            "patterns": ["I didn't get an order confirmation email", "No confirmation email received", "Order confirmation missing"],
+            "responses": ["If you didn’t receive a confirmation email, please check your spam folder or contact us here: [confirmation_issue_link]."],
+            "context": [""]
+        }
+    ]
+}
