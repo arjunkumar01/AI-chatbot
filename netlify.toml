@@ -1,6 +1,0 @@
-[build]
-  command = "docker build -t ai-chatbot . && docker run -d -p 8501:8501 ai-chatbot"
-  publish = "/app"
-
-[build.environment]
-  PYTHON_VERSION = "3.12.2"
