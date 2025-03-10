@@ -1,5 +1,6 @@
 [build]
-  command = "pyenv install 3.12.2 && pyenv global 3.12.2 && python --version && pip install -r requirements.txt"
+  command = "docker build -t ai-chatbot . && docker run -d -p 8501:8501 ai-chatbot"
+  publish = "/app"
 
 [build.environment]
   PYTHON_VERSION = "3.12.2"
